@@ -1,0 +1,109 @@
+/**
+ * OVERVIEW
+ *
+ * This project is separated to the following style sheets:
+ *
+ * normalize.min.css....CSS reset.
+ * base.css.............Global rules and helpers.
+ * layout.css...........CSS rules that control the layout of the page.
+ * components.css.......Own CSS for the components that build up the page.
+ */
+
+
+/**
+ * CONTENTS
+ *
+ * SETTINGS
+ * Variables............Globally-available variables.
+ * Box-sizing...........Better default `box-sizing`.
+ * Margins..............Top and bottom margins global values.
+ *
+ * BASE STYLES
+ * Base font............Base font style.
+ * Headings.............H1-H3 styles.
+ *
+ */
+
+
+
+
+
+ /*------------------------------------*\
+  #VARIABLES
+\*------------------------------------*/
+
+:root {
+  --bg-primary: #0F8A5F;
+  --bg-secondary: #e3e3e3;
+  --primary-font-color: #000000;
+  --secondary-font-color: #f7f7f7;
+  }
+
+
+
+
+
+  /*------------------------------------*\
+    #BOX-SIZING
+  \*------------------------------------*/
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+
+
+
+
+  /*------------------------------------*\
+    #MARGINS
+  \*------------------------------------*/
+  
+  footer {
+      padding: 1rem;
+      font-size: .8rem;
+  }
+
+  section, .sidebar {
+    margin: .5rem 1rem;
+  } 
+
+
+
+
+
+  
+  /*------------------------------------*\
+    #BASE FONT
+  \*------------------------------------*/
+  
+  html {
+    font-size: clamp(1.2rem, 4vw, 20px);
+    font-family: 'Old Standard TT', serif;
+    line-height: 1.5;
+    color: var(--primary-font-color);
+    text-align: center;
+  }
+
+
+
+
+
+  /*------------------------------------*\
+    #HEADINGS
+  \*------------------------------------*/
+  
+  h1 { 
+    font-size: clamp(35px, 7vw, 55px); 
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+  }
+  
+  h2 { font-size: clamp(18px, 7vw, 35px); }
+  
+  h3 { font-size: clamp(17px, 6vw, 30px);}
+
+  h2, h3 { 
+    margin: min(3vh, 1.8rem) 0 1.05rem; 
+    font-family: 'Oswald', sans-serif;
+    }
